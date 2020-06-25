@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mt-5 mb-5">Rock Paper Scissors</h1>
+            <p class="mb-5">Think you can beat the computer, give it your best shot</p>
+            <div id="game">
+                <div class="row">
+                    <div class="col-lg-4 mb-2">
+                        <input class="form-control" type="text" id="playerName" placeholder="Please Enter your Player Name">
+                    </div>
+                    <div class="col-lg-4 mb-2">
+                        <button class="btn btn-primary nameSubmitButton" id="nameChanger">Submit Name</button>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="index.html"><button class="btn btn-warning nameSubmitButton" id="resetGame">Reset Game</button></a>
+                    </div>
+                </div>
+                <p class="mt-4 mb-5"><strong>Please Note: </strong>You can enter a chosen name but you are able to continue just as Player</p>
+                <div class="row">
+                    <div class="col lg-4 columns">
+                        <button class="btn btn-primary choiceButton mt-2 mb-2" id="rock">Rock</button>
+                    </div>
+                    <div class="col lg-4 columns">
+                        <button class="btn btn-primary choiceButton mt-2 mb-2" id="paper">Paper</button>
+                    </div>
+                    <div class="col lg-4 columns">
+                        <button class="btn btn-primary choiceButton mt-2 mb-2" id="scissors">Scissors</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 columns">
+                        <h2 class="pt-5 pb-5" id="enteredName">Player</h2>
+                        <h3 class="mb-5">Your Score: <span id="yourScore">0</span></h3>
+                        <h3 class="mb-5">You Chose: <span id="yourChoice"></span></h3>
+                    </div>
+                    <div class="col-lg-6 columns">
+                        <h2 class="pt-5 pb-5">Computer</h2>
+                        <h3 class="mb-5">Computer Score: <span id="computerScore">0</span></h3>
+                        <h3 class="mb-5">Computer Chose: <span id="computerChoice"></span></h3>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-12 columns">
+                        <h1 class="pt-3 pb-3" id="outcome">Who was the Winner</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="nameChanger.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
